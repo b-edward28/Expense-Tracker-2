@@ -1,4 +1,7 @@
-{
+{   
+    "budget":{
+        "monthly": 30000
+    },
     "expenses": [
         {
             "id": 1,
