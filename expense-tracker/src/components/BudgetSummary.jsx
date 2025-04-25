@@ -1,8 +1,8 @@
 import {useState} from 'react';
 
-function BudgetSummary({budget}) {
-    const totalExpenses = budget.reduce((sum, expense) => sum + parseFloat(expense.amount), 0);
-    const percentage = (totalSpent / budget) * 100;
+function BudgetSummary({totalBudget, expenses, onSetBudget}) {
+    const totalSpent = expenses.reduce((sum, expense) => sum + parseFloat(expense.amount), 0);
+    const percentage = (totalSpent / totalBudget) * 100;
 
     const [inputBudget, setInputBudget] = useState("");
 
@@ -44,7 +44,8 @@ function BudgetSummary({budget}) {
             {percentage > 100 && (
                 <div className="alert alert-danger">You have exceeded your budget!</div>
             )}
-            
+
         </div>
     );
 }
+export default BudgetSummary;
