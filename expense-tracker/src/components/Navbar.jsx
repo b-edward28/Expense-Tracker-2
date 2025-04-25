@@ -19,7 +19,7 @@ function Navbar() {
             <a href="/about" >About</a>
           </div>
           <div>
-            <a href="/expenses">All Expenses</a>
+            <a href="/expenses">Expenses</a>
           </div>
         </div>
       </div>

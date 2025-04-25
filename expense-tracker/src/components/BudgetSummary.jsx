@@ -31,11 +31,11 @@ function BudgetSummary({totalBudget, expenses, onSetBudget}) {
             </div>
             </form>
 
-            <h5>Monthly Budget: <strong>KES {totalBudget || 0}</strong></h5>
-            <h5>Money Spent: <strong>KES {totalSpent || 0}</strong></h5>
-            <h5>Money Remaining: <strong>KES {totalBudget - totalSpent || 0}</strong></h5>
+            <h5 className= "mb-3">Monthly Budget: <strong>KES {totalBudget || 0}</strong></h5>
+            <h5 className= "mb-3">Money Spent: <strong>KES {totalSpent || 0}</strong></h5>
+            <h5 className= "mb-3">Money Remaining: <strong>KES {totalBudget - totalSpent || 0}</strong></h5>
 
-            <div className="progress mb-2">
+            <div className="progress mb-4" style={{ height: '35px' }}>
                 <div className={`progress-bar ${percentage > 100 ? 'bg-danger' : 'bg-success'}`}
                      style={{ width: `${Math.min(percentage, 100)}%` }}>
                      {Math.min(percentage, 100).toFixed(1)}%

@@ -1,25 +1,42 @@
-{   
-    "budget":{
-        "monthly": 30000
+{
+  "budget": {
+    "monthly": 50000
+  },
+  "expenses": [
+    {
+      "id": "1",
+      "name": "Groceries",
+      "category": "Food",
+      "amount": 500,
+      "date": "2023-10-01"
     },
-    "expenses": [
-        {
-            "id": 1,
-            "description": "Groceries",
-            "amount": 50.00,
-            "date": "2023-10-01"
-        },
-        {
-            "id": 2,
-            "description": "Utilities",
-            "amount": 100.00,
-            "date": "2023-10-05"
-        },
-        {
-            "id": 3,
-            "description": "Rent",
-            "amount": 1200.00,
-            "date": "2023-10-01"
-        }
-    ]
+    {
+      "id": "2",
+      "name": "Utilities",
+      "category": "Bills",
+      "amount": 15000,
+      "date": "2023-10-02"
+    },
+    {
+      "id": "3",
+      "name": "Rent",
+      "category": "Housing",
+      "amount": 10000,
+      "date": "2023-10-03"
+    },
+    {
+      "id": "4",
+      "name": "Dining Out",
+      "category": "Food",
+      "amount": 2000,
+      "date": "2023-10-04"
+    },
+    {
+      "id": "5",
+      "name": "Internet",
+      "category": "Bills",
+      "amount": 3000,
+      "date": "2023-10-05"
+    }
+  ]
 }
