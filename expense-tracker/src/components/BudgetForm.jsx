@@ -15,7 +15,7 @@ function BudgetForm({setBudget}) {
     }, [setBudget]);
 
     const handleSubmit = (event) => {
-        event.preventDefault():
+        event.preventDefault();
 
         const budgetAmount = Number(amount);
         if (!amount || budgetAmount <= 0) {
